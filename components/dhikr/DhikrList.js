@@ -46,7 +46,7 @@ const DhikrList = () => {
     <dev className={classes.dhikr}>
       <Card>
         <div className={classes.display}>
-          <span>کۆی زیکرەکان: </span>
+          <span>کۆی چاکەکان: </span>
           <span>{counters}</span>
         </div>
       </Card>
