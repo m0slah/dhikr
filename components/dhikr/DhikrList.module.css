@@ -7,19 +7,49 @@
     padding: 1rem;
     font-weight: 900;
     font-size: 24px;
-    border-radius: 5px;
+    border-radius: 5px;    
+    max-width: 60rem;
+    width: 90%;    
+    margin: 2rem auto;
+    animation: display 1s ease-out forwards;
 }
+
+  @keyframes display {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .ul {
     align-items: center;
     text-align: center;
     justify-content: center;
+    list-style-type: none !important;
+    animation: list 1s ease-in forwards;
 }
 
+@keyframes list {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .ul li {
-    list-style-type: none;
     border-bottom: 2px solid #E5D1FA;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
+    transform: translateX(-20px);
 }
 
 .btn {
