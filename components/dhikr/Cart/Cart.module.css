@@ -1,0 +1,25 @@
+.display{
+    background-color: blueviolet;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 24px;
+    border-radius: 5px;    
+    max-width: 60rem;
+    width: 90%;    
+    margin: 2rem auto;
+    animation: display 1s ease-out forwards;
+}
+
+  @keyframes display {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

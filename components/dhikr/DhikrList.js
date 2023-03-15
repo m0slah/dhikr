@@ -1,36 +1,39 @@
 import React, { useState, Fragment } from "react";
+
 import Card from "../UI/Card";
+import Cart from "./Cart/Cart";
 import classes from "./DhikrList.module.css";
+
 const DHIKR = [
   {
     id: 1,
     name: "سبحان اللە",
-    price: 10,
+    price: 1,
   },
   {
     id: 2,
     name: "الحمد اللە",
-    price: 10,
+    price: 1,
   },
   {
     id: 3,
     name: "اللە اکبر",
-    price: 10,
+    price: 1,
   },
   {
     id: 4,
     name: "استغفراللە",
-    price: 10,
+    price: 1,
   },
   {
     id: 5,
     name: "أشهد أن لا إله إلا الله وأشهد أن محمدا رسول الله",
-    price: 10,
+    price: 1,
   },
   {
     id: 6,
     name: "لا اله الا الله",
-    price: 10,
+    price: 1,
   },
 ];
 
@@ -44,13 +47,7 @@ const DhikrList = () => {
 
   return (
     <dev className={classes.dhikr}>
-      <Card>
-        <div className={classes.display}>
-          <span>کۆی چاکەکان: </span>
-          <span>{counters}</span>
-        </div>
-      </Card>
-
+      <Cart onCounters={counters} />
       <Card>
         {DHIKR.map((item) => (
           <ul className={classes.ul} id={item.id} key={item.id}>
